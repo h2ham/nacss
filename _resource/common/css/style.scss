@@ -1,0 +1,42 @@
+@charset "utf-8";
+
+/* ---------------------------
+ * PC and Mobile
+ * --------------------------- */
+
+$mq-all: true;
+$mq-pc: false;
+$mq-sp: false;
+@import "vendor/normalize/normalize";
+@import "setting/variable";
+@import "setting/mq";
+
+@import "base";
+@import "layout";
+@import "module";
+
+@media screen and (max-width: $default-mq-width) {
+/* ---------------------------
+ * Mobile
+ * --------------------------- */
+
+$mq-all: false;
+$mq-pc: false;
+$mq-sp: true;
+@import "base";
+@import "layout";
+@import "module";
+}
+
+@media screen and (min-width: $default-mq-width) {
+/* ---------------------------
+ * PC
+ * --------------------------- */
+
+$mq-all: false;
+$mq-pc: true;
+$mq-sp: false;
+@import "base";
+@import "layout";
+@import "module";
+}

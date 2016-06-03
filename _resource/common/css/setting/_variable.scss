@@ -1,0 +1,39 @@
+// ---------------------------
+//
+// variable.scss
+//
+// ---------------------------
+
+
+// ---------------------------
+// color
+// ---------------------------
+
+
+// ---------------------------
+// background-color
+// ---------------------------
+
+$bg-default: #fff;
+$bg-dark:    #ccc;
+
+// ---------------------------
+// mixin
+// ---------------------------
+
+// clearfix
+
+@mixin clearfix {
+  &:after {
+    content: '';
+    display: block;
+    clear: both;
+  }
+}
+
+// font-size の指定
+
+@mixin font-size($size: 16) {
+  font-size: $size + px;
+  font-size: ($size / 10) + rem;
+}

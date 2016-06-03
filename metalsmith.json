@@ -1,0 +1,22 @@
+{
+  "source": "_resource",
+  "destination": "./.tmphtml",
+  "metadata": {
+    "mywebsite": "http://xxx.xxx.xxx"
+  },
+  "plugins": {
+    "metalsmith-ignore": [
+      "_layouts/**/*",
+      "common/**/*",
+      "**/*.scss"
+    ],
+    "metalsmith-layouts": {
+      "engine": "swig",
+      "directory": "_resource/_layouts"
+    },
+    "metalsmith-in-place": {
+      "engine": "swig",
+      "directory": "_resource/_layouts"
+    }
+  }
+}

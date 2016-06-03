@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang ="ja">
+<head>
+<meta  charset ="UTF-8">
+<title>{{ title }}</title>
+<link rel="stylesheet" href="{{ path }}/common/css/style.css">
+</head>
+<body>
+
+{% include 'header.html' %}
+
+{{ contents | safe }}
+
+
+{% if side === true %}
+{% include 'side.html' %}
+{% endif %}
+
+{% include 'footer.html' %}
+{% include 'script.html' %}
+
+</body>
+</html>

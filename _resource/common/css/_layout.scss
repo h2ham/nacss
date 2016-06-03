@@ -1,0 +1,37 @@
+// ---------------------------
+//
+// layout.scss
+//
+// ---------------------------
+
+@if $mq-all {
+  .l-inner {
+    width: 960px;
+    margin: 0 auto;
+  }
+
+  .l-visual {
+    background-color: #8E9E6F;
+
+    > .l-inner {
+      position: relative;
+
+      div {
+        position: absolute;
+        top: 15px;
+        left: 15px;
+        padding: 10px;
+        background-color: rgba(0,0,0,.6);
+        color: #fff;
+      }
+    }
+  }
+}
+
+@if $mq-pc {
+
+}
+
+@if $mq-sp {
+
+}
